@@ -459,7 +459,7 @@ class CameraController extends ValueNotifier<CameraValue> {
   ///
   /// Throws a [CameraException] if the capture fails.
   Future<void> startVideoStreaming(String url,
-      {int bitrate = 1200 * 1024, required bool androidUseOpenGL}) async {
+      {int bitrate = 500 * 1024, required bool androidUseOpenGL}) async {
     if (!value.isInitialized || _isDisposed!) {
       throw CameraException(
         'Uninitialized CameraController',
